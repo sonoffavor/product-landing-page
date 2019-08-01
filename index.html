@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <style>
+        @media (max-width: 600px) {
+            #nav-bar a {
+                display: none;
+            }
+
+            #nav-bar a.nav-icon {
+                color: black;
+                display: flex;
+                font-size: 20px;
+                padding: 16.5px 16px;
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+
+            #video {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #nav-bar.responsive {
+                position: fixed;
+            }
+
+            #nav-bar.responsive a.nav-icon {
+                position: absolute;
+            }
+
+            #nav-bar.responsive a {
+                display: flex;
+                float: none;
+                text-align: left;
+            }
+
+            #nav-bar.responsive ul {
+                float: none;
+            }
+
+            #nav-bar.responsive li {
+                float: none;
+            }
+
+        }
+
+        @media (width: 1365px) {
+            #video {
+                width: 50%;
+            }
+
+            .pricing-container {
+                justify-content: center;
+            }
+
+            .instrument {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        @media (width: 1920px) {
+            #video {
+                width: 40%;
+            }
+
+            .pricing-container {
+                justify-content: center;
+            }
+
+            .instrument {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    </style>
+    <title>Electronic Keyboard</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+        <nav class="topnav" id="nav-bar">
+            <div class="company-logo">
+                <img id="header-img" src="https://image.flaticon.com/icons/svg/1973/1973688.svg" alt="keyboard-image">
+                <p id="header-title">Electronic Keyboard</p>
+            </div>
+            <ul>
+                <li><a href="#how-it-works" class="nav-link" onclick="myFunction()">How It Works</a></li>
+                <li><a href="#features" class="nav-link" onclick="myFunction()">Features</a></li>
+                <li><a href="#pricing" class="nav-link" onclick="myFunction()">Pricing</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section id="how-it-works">
+            <p id="product-description">Extraordinary feel. Breathtaking sound.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/aeEmGvm7kDk" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section class="contact">
+            <p>You're just one click away from an unforgettable adventure!</p>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <input type="submit" id="submit" class="butn" value="Get Started">
+            </form>
+        </section>
+        <section id="features">
+            <div class="feature-container">
+                <div class="icon">
+                    <img src="images/premium-badge.png" alt="premium-icon">
+                </div>
+                <div class="description">
+                    <h2>Premium Materials</h2>
+                    <p>Our keyboards are made with the finest materials.</p>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="icon">
+                    <img src="images/warranty.png" alt="warranty-icon">
+                </div>
+                <div class="description">
+                    <h2>Lifetime Warranty </h2>
+                    <p>We stand behind the quality of our keyboards. For this reason, we ship all our keyboards with a
+                        lifetime warranty.</p>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="icon">
+                    <img src="images/shield.png" alt="shield-icon">
+                </div>
+                <div class="description">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages to your keyboard.</p>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="icon">
+                    <img src="images/fast-delivery.png" alt="truck-icon">
+                </div>
+                <div class="description">
+                    <h2>Fast Shipping</h2>
+                    <p>We ship your instrument the same day that it is ordered. We also provide free returns if you are not
+                        satisfied.</p>
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="pricing-container">
+                <div class="instrument">
+                    <div class="level">Console Digital Piano</div>
+                    <h2>$699.99</h2>
+                    <ul>
+                        <li>88-key</li>
+                        <li>Hammer-action</li>
+                        <li>Audio inputs</li>
+                        <li>USB/MIDI port</li>
+                        <li>50 play-a-long songs</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="instrument">
+                    <div class="level">Compact Digital Piano</div>
+                    <h2>$399.99</h2>
+                    <ul>
+                        <li>88-key</li>
+                        <li>Hammer-action</li>
+                        <li>40% smaller and considerably lighter</li>
+                        <li>USB type B port</li>
+                        <li>200 songs</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="instrument">
+                    <div class="level">Console Digital Piano</div>
+                    <h2>$2,199.99</h2>
+                    <ul>
+                        <li>Graded Hammer 3X keyboard action</li>
+                        <li>Virtual Resonance Modeling</li>
+                        <li>Key-off samples deliver change in sound</li>
+                        <li>Full Dot LCD Display</li>
+                        <li>24 instrument voices</li>
+                    </ul>
+                    <button class="btn">Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="mailto:sonoffavor@gmail.com?subject=feedback">Contact</a></li>
+        </ul>
+        <span>Copyright 2019, Ben Rietman</span>
+        <div>Image by 
+            <a href="https://pixabay.com/users/cocoparisienne-127419/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=362251" title="piano" target="_blank">&nbsp;cocoparisienne&nbsp;</a> is licensed by <a href="https://pixabay.com" title="Pixabay" target="_blank">&nbsp;www.pixabay.com&nbsp;</a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+                title="Smashicons">&nbsp;Smashicons&nbsp;</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">&nbsp;www.flaticon.com&nbsp;</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">&nbsp;CC
+                3.0 BY&nbsp;</a>
+        </div>
+    </footer>
+</body>
+</html>
